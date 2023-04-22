@@ -18,13 +18,13 @@ const options = {
     "X-RapidAPI-Host": "unofficial-cricbuzz.p.rapidapi.com",
   },
 };
-// fetch("https://unofficial-cricbuzz.p.rapidapi.com/get-image?id=170702", options)
-//   .then((res) => {
-//     console.log(res);
-//     return res.url;
-//   })
-//   .then((data) => console.log(data))
-//   .catch((err) => console.error(err));
+fetch("https://unofficial-cricbuzz.p.rapidapi.com/get-image?id=170702", options)
+  .then((res) => {
+    console.log(res);
+    return res.url;
+  })
+  .then((data) => console.log(data))
+  .catch((err) => console.error(err));
 fetch(
   "https://unofficial-cricbuzz.p.rapidapi.com/series/list?matchType=fantasy",
   options
